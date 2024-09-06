@@ -190,6 +190,20 @@ async fn actual_main(mut cli_app: Ferium) -> Result<()> {
         SubCommands::Complete { .. } | SubCommands::Profiles | SubCommands::Modpacks => {
             unreachable!();
         }
+        SubCommands::Split {} => {
+            let profile = get_active_profile(&mut config)?;
+
+            //let spinner = indicatif::ProgressBar::new_spinner().with_message("Reading files");
+            //spinner.enable_steady_tick(std::time::Duration::from_millis(100));
+
+            for m in &profile.mods {
+                match &m.identifier {
+                    ModIdentifier::ModrinthProject(id) => {}
+                    ModIdentifier::CurseForgeProject(id) => {}
+                    ModIdentifier::GitHubRepository((v1, v2)) => {}
+                }
+            }
+        }
         SubCommands::Scan {
             platform,
             directory,

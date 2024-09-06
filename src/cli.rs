@@ -80,6 +80,8 @@ pub enum SubCommands {
         #[clap(long, short, visible_alias = "override")]
         force: bool,
     },
+    /// Split the mods in the profile into a client mod list and a server mod list
+    Split {},
     /// Print shell auto completions for the specified shell
     Complete {
         /// The shell to generate auto completions for
