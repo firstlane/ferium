@@ -105,7 +105,7 @@ pub async fn verbose(profile: &mut Profile, markdown: bool) -> Result<()> {
     metadata.sort_unstable_by_key(|e| e.name().to_lowercase());
 
     if !markdown {
-        println!("{}", &*TICK);
+        println!("{}", *TICK);
     }
 
     for project in &metadata {
@@ -245,7 +245,7 @@ pub fn github(repo: &Repository, releases: &[Release]) {
   Authors:      {}
   Topics:       {}
   License:      {}",
-        &repo.name.bold(),
+        repo.name.bold(),
         repo.description
             .as_ref()
             .map_or(String::new(), |description| {

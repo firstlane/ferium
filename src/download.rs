@@ -127,7 +127,7 @@ pub async fn download(
                 .await?;
             progress_bar.lock().println(format!(
                 "{} Downloaded  {:>7}  {}",
-                &*TICK,
+                *TICK,
                 size::Size::from_bytes(length)
                     .format()
                     .with_base(size::Base::Base10)
@@ -156,7 +156,7 @@ pub async fn download(
         }
         println!(
             "{} Installed          {}",
-            &*TICK,
+            *TICK,
             name.to_string_lossy().dimmed()
         );
     }

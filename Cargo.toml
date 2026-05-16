@@ -61,7 +61,7 @@ clap.workspace = true
 rfd = { version = "0.17", optional = true, default-features = false, features = [
     "xdg-portal",
 ] }
-tokio = { version = "1.49", default-features = false, features = [
+tokio = { version = "1.52", default-features = false, features = [
     "rt-multi-thread",
     "macros",
 ] }

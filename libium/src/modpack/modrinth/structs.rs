@@ -1,4 +1,4 @@
-use ferinth::structures::{project::ProjectSupportRange, version::Hash, Int};
+use ferinth::structures::{project::SideType, version::Hash, Int};
 use serde::{Deserialize, Serialize};
 use std::{collections::HashMap, path::PathBuf};
 use url::Url;
@@ -50,8 +50,8 @@ pub struct ModpackFile {
 #[derive(Deserialize, Serialize, Debug, Clone)]
 #[serde(rename_all = "camelCase")]
 pub struct ModpackFileEnvironment {
-    client: ProjectSupportRange,
-    server: ProjectSupportRange,
+    client: SideType,
+    server: SideType,
 }
 
 #[derive(Deserialize, Serialize, Debug, Clone, PartialEq, Eq)]

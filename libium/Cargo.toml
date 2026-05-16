@@ -30,11 +30,11 @@ clap.workspace = true
 derive_more = { version = "2.1", features = ["display"] }
 serde = { version = "1.0", features = ["derive"] }
 url = { version = "2.5", features = ["serde"] }
-zip-extensions = "0.13"
+zip-extensions = "0.14"
 futures-util = "0.3"
 directories = "6.0"
+sha1_smol = "1.0"
 thiserror = "2.0"
 base64 = "0.22"
 regex = "1.12"
-sha1 = "0.10"
-zip = "6.0"
+zip = "8.6"

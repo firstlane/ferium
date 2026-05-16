@@ -1,10 +1,8 @@
 use crate::{CURSEFORGE_API, MODRINTH_API};
 use futures_util::{try_join, TryFutureExt};
-use sha1::{Digest, Sha1};
+use sha1_smol::Sha1;
 use std::{
-    collections::HashMap,
-    fs::{read, read_dir},
-    path::Path,
+    collections::HashMap, fs::{read, read_dir}, path::Path
 };
 
 #[derive(thiserror::Error, Debug)]
@@ -36,7 +34,7 @@ pub async fn scan(
         {
             let bytes = read(&path)?;
 
-            let mr_hash = format!("{:x}", Sha1::digest(&bytes));
+            let mr_hash = format!("{}", Sha1::from(&bytes).digest());
             let cf_hash = furse::cf_fingerprint(&bytes);
 
             if let Some(filename) = path.file_name() {
