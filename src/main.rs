@@ -262,6 +262,9 @@ async fn actual_main(mut cli_app: Ferium) -> Result<()> {
 
             did_add_fail = add::display_successes_failures(&successes, failures);
         }
+        SubCommands::Build {
+            
+        }
         SubCommands::List { verbose, markdown } => {
             let profile = get_active_profile(&mut config)?;
             check_empty_profile(profile)?;
