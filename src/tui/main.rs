@@ -16,11 +16,34 @@ use ratatui::{
 };
 
 fn main() -> color_eyre::Result<()> {
-    color_eyre::install()?;
-    let mut terminal = ratatui::init();
-    let app_result = App::default().run(&mut terminal);
-    ratatui::restore();
-    app_result
+    // color_eyre::install()?;
+    // let mut terminal = ratatui::init();
+    // let app_result = App::default().run(&mut terminal);
+    // ratatui::restore();
+    // app_result
+
+
+
+    let profile = get_active_profile(&mut config)?;
+    let override_profile = filters.override_profile;
+    let filters: Vec<_> = filters.into();
+
+    // TODO: conf multiple filters if the user sets the option
+    ensure!(
+        // If filters are specified, there should only be one mod
+        filters.is_empty() || identifiers.len() == 1,
+        "You can only configure filters when adding a single mod!"
+    );
+
+    let identifiers = identifiers
+        .into_iter()
+        .map(libium::add::parse_id)
+        .collect::<libium::add::Result<Vec<_>>>()?;
+
+    let (successes, failures) =
+        libium::add(profile, identifiers, !force, override_profile, filters).await?;
+
+    did_add_fail = add::display_successes_failures(&successes, failures);
 }
 
 #[derive(Debug, Default)]

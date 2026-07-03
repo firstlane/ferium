@@ -398,6 +398,33 @@ async fn actual_main(mut cli_app: Ferium) -> Result<()> {
                 ProfileSubCommands::Info
             });
             match subcommand {
+                ProfileSubCommands::Build {
+                    file,
+                } => {
+                    let profile = get_active_profile(&mut config)?;
+                    let override_profile = filters.override_profile;
+                    let filters: Vec<_> = filters.into();
+
+                    // TODO: conf multiple filters if the user sets the option
+                    ensure!(
+                        // If filters are specified, there should only be one mod
+                        filters.is_empty() || identifiers.len() == 1,
+                        "You can only configure filters when adding a single mod!"
+                    );
+
+                    let identifiers = identifiers
+                        .into_iter()
+                        .map(libium::add::parse_id)
+                        .collect::<libium::add::Result<Vec<_>>>()?;
+
+                    let (successes, failures) =
+                        libium::add(profile, identifiers, !force, override_profile, filters).await?;
+
+                    did_add_fail = add::display_successes_failures(&successes, failures);
+
+
+                    subcommands::profile::build(get_active_profile(&mut config)?).await?;
+                }
                 ProfileSubCommands::Configure {
                     game_versions,
                     mod_loaders,

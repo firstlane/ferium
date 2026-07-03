@@ -1,0 +1,184 @@
+ Integrated Dungeons and Structures
+3D crops Revamped
+3D Ladders
+[EMF] Entity Model Features
+[ETF] Entity Texture Features
+Advanced Finders
+Alex's Delight
+Alex's Mobs
+Alshanex's Familiars
+AmbientSounds
+Amendments
+Animal Feeding Trough
+Apotheosis
+Apothic Attributes
+AppleSkin
+Aquamirae
+Architectury API
+AzureLib
+AzureLib Armor
+Bad Mobs
+BaguetteLib
+Balm
+Better Lanterns
+Better Lights
+Better Villages
+Blinking Ender Eyes
+Blossom Blade
+Blueprint
+Born in Chaos
+Bosses of Mass Destruction Forge
+Caelus API
+Carry On
+Cave Dweller Evolved
+CERBON's API
+Chunk Loaders
+Citadel
+Cloth Config API
+Configured
+Conquest's Medieval Armors and Weapons
+CorgiLib
+Create
+CreativeCore
+Creeper Overhaul
+Cristel Lib
+Curios API
+Curious Lanterns
+Data Anchor
+Demi's Sky Arena
+Detailed Animations
+Dimensional Doors
+Distant Horizons
+Door Tweaks
+Dungeons and Taverns
+Easy Anvils
+Easy Mob Farm
+Easy Piglins
+Easy Shulker Boxes
+Easy Villagers
+ElevatorMod
+Elytra Slot
+Embeddium
+Enchant Icons
+Ender Mail
+EnderPack
+Enemy Expansion
+Enhanced Boss Bars
+Enhanced Celestials
+Enlightend
+Entity Culling
+Epic Fight
+Epic Knights: Shields Armor and Weapons
+EpicFight - Wither: Reincarnated Compatibility
+Essential Mod
+Explorer's Compass
+Explorify
+FallingTree
+Fantasy Armor (Medieval Series)
+Farmer's Delight
+FLIB
+ForgeEndertech
+Freecam
+Freshanimations X Epicfight Compat
+Friends&Foes (Forge/NeoForge)
+Geckolib
+GlitchCore
+Grappling Hook Mod
+GraveStone Mod
+Gravestone x Curios API Compat
+Guard Villagers
+Incendium
+Integrated API
+Iron's Spells 'n Spellbooks
+JamLib
+Jet and Elia's Armors
+Jump Over Fences
+Just Enough Items (JEI)
+Just Enough Resources (JER)
+Kotlin for Forge
+KubeJS
+L_Ender's Cataclysm
+Library Ferret
+Lionfish-API
+Lithostitched
+Lootr
+Lost Libraries
+Lower Grass
+Mahou Tsukai
+Medieval Buildings
+Mobs of Mythology
+MonoLib
+Moonlight Lib
+Mowzie's Mobs
+Mutant Monsters
+Mythic Mounts
+Nature's Compass
+nebulus trees and portals
+Noisium
+Nyf's Quivers
+Obscure API
+Observable
+Oculus
+Paragliders
+ParCool!
+Patchouli
+Placebo
+playerAnimator
+Puzzles Lib
+Quark
+Radiant Gear
+Realm RPG: Fallen Adventurers
+Resourceful Config
+Resourceful Lib
+Rhino
+RightClickHarvest
+Savage & Ravage
+Serene Seasons
+Shoulder Surfing Reloaded
+Shrines Structures
+Simply Swords
+Small Ships
+SmartBrainLib
+Sodium Dynamic Lights
+Sodium Options API
+Sophisticated Backpacks
+Sophisticated Core
+Sound Physics Remastered
+spark
+Stonecutter Likes Wood
+Storage Drawers
+SuperMartijn642's Config Lib
+SuperMartijn642's Core Lib
+Supplementaries
+Sword in the Stone
+Tectonic
+Terralith
+Thalassophobia
+Threateningly mobs
+Tom's Simple Storage Mod
+Towns and Towers
+Traveler's Titles
+Universal Clock HUD (Fork)
+Valarian Conquest
+Valhelsia Core
+Valhelsia Structures
+Vanilla Expanded - Orcz
+Waystones
+When Dungeons Arise
+When Dungeons Arise: Seven Seas
+Wither: Reincarnated
+Xaero's Minimap
+Xaero's World Map
+YUNG's API
+YUNG's Better Desert Temples
+YUNG's Better Dungeons
+YUNG's Better End Island
+YUNG's Better Jungle Temples
+YUNG's Better Mineshafts
+YUNG's Better Nether Fortresses
+YUNG's Better Ocean Monuments
+YUNG's Better Strongholds
+YUNG's Better Witch Huts
+YUNG's Bridges
+YUNG's Extras
+Zeta

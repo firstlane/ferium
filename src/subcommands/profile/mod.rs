@@ -1,8 +1,10 @@
+mod build;
 mod configure;
 mod create;
 mod delete;
 mod info;
 mod switch;
+pub use build::build;
 pub use configure::configure;
 pub use create::create;
 pub use delete::delete;

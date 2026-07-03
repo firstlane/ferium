@@ -123,6 +123,12 @@ pub enum SubCommands {
 
 #[derive(Clone, Debug, Subcommand)]
 pub enum ProfileSubCommands {
+    ///
+    #[clap()]
+    Build {
+        #[clap(value_hint(ValueHint::FilePath))]
+        file: Option<PathBuf>,
+    },
     /// Configure the current profile's name, Minecraft version, mod loader, and output directory.
     /// Optionally, provide the settings to change as arguments.
     #[clap(visible_aliases = ["config", "conf"])]
