@@ -59,9 +59,6 @@ pub enum SubCommands {
         #[command(flatten)]
         filters: FilterArguments,
     },
-    /// Build a modpack by searching for desired mods and choosing mod loader / Minecraft version afterwards
-    Build {
-    },
     /// Scan the profile's output directory (or the specified directory) for mods and add them to the profile
     Scan {
         /// The platform you prefer mods to be added from.

@@ -44,10 +44,13 @@ exclude = [".github", "tests", "media"]
 
 
 [features]
-default = ["gui"]
+default = ["gui", "tui"]
 
 # Replaces the CLI text input with a GUI file dialogue for picking folders
 gui = ["rfd"]
+
+tui = ["ratatui", "crossterm"]
+ratatui = ["dep:ratatui"]
 
 
 [dependencies]
@@ -74,7 +77,8 @@ inquire = "0.9"
 libium = { path = "./libium" }
 anyhow = "1.0"
 size = "0.5"
-ratatui = "0.29.0"
+ratatui = { version = "0.30.2", optional = true }
+crossterm = { version = "0.29.0", optional = true }
 
 [dev-dependencies]
 rand = "0.10"
@@ -84,3 +88,9 @@ rand = "0.10"
 codegen-units = 1
 strip = true
 lto = "fat"
+
+
+[[bin]]
+name = "feritui"
+path = "src/tui/main.rs"
+required-features = ["tui"]
